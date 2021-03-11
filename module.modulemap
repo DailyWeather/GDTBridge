@@ -1,0 +1,4 @@
+module GDTPackageBridge {
+    header "GDTBridgeHeader.h"
+    export *
+}
