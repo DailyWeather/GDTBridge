@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GDTBridge'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'GDT广告平台兼容Swift'
 
 # This description is used to generate tags and improve search results.
@@ -42,6 +42,9 @@ Pod::Spec.new do |s|
     # 路径根据实际情况进行引用，必须保证路径是正确的
     'SWIFT_INCLUDE_PATHS' => ['$(PODS_ROOT)/', '$(PODS_CONFIGURATION_BUILD_DIR)/']
   }
+  s.frameworks = 'AdSupport','AVFoundation','CoreTelephony','CoreLocation','Foundation','SystemConfiguration','Security','UIKit','WebKit','QuartzCore','CoreGraphics' #工程依赖的framework
+  s.libraries = 'z','xml2','c++' #工程依赖的library
+  s.requires_arc = true #工程是否用arc规则
 
    s.dependency 'GDTMobSDK'
 end
