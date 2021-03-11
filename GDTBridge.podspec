@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GDTBridge'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'GDT广告平台兼容Swift'
 
 # This description is used to generate tags and improve search results.
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = '主要用于兼容广点通广告SDk，使swift的pod库可以直接依赖于广点通SDK'
+  s.description      = '主要用于兼容广点通广告SDk，使Swift的pod库可以直接依赖于广点通SDK'
 
   s.homepage         = 'https://github.com/DailyWeather/GDTBridge.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.swift_version = "5.0"
   s.swift_versions = ['4.0', '4.2', '5.0']
-  
+
   s.source_files = ['*.swift', 'GDTBridgeHeader.h']
   s.public_header_files = 'GDTBridgeHeader.h'
   
